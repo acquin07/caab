@@ -61,6 +61,16 @@ include("connection/connect.php");
 					</div>
 				</div>
 				
+				<div class="container_12">
+					<div class="grid_12">
+						<h1>
+							<!-- <a href="index.html"> -->
+							<img src="images/logo.png" alt="Your Happy Family" width = "30%", height = "30%">
+							</a>
+						</h1>
+					</div>
+				</div>
+				<div class="clear"></div>
 				
 				<div class="hotel_booking_area">
                     <div class="container">
@@ -76,10 +86,13 @@ include("connection/connect.php");
                                   <div class="form-group col-lg-3 col-md-3 col-sm-3 icon_arrow">
                                             <div class="input-group border-bottom-dark-2">
                                                 <select class="form-control" name="dist" id="adult">
-                                                 <option selected="selected" disabled="disabled">location</option>
-                                                  <option value='JALANDHAR'>jalandhar</option>
-                                                  <option value='MOGA'>moga</option>
-                                                  <option value='FARIDKOT'>faridkot</option>
+                                                 <option selected="selected" disabled="disabled">Location</option>
+                                                  <option value='KALOOR'>Kaloor</option>
+                                                  <option value='PANAMBALLI'>Panamballi</option>
+                                                  <option value='KAKKANAD'>Kakkanad</option>
+												  <option value='FORTKOCHI'>FortKochi</option>
+												  <option value='ALUVA'>Aluva</option>
+												  <option value='MATTANCHERRY'>Mattancherry</option>
 												      
                                                 </select>               
                                             </div>
@@ -91,22 +104,20 @@ include("connection/connect.php");
                                         <div class="form-group col-lg-3 col-md-3 col-sm-3 icon_arrow">
                                             <div class="input-group border-bottom-dark-2">
                                                 <select  class="form-control" name='okaat' id="room">
-                                                   <option selected="selected" disabled="disabled">comfort</option>
-                                                  <option value='eco'>economy</option>
-                                                  <option value='standard'>standard</option>
-                                                  <option value='lux'>lux</option>
+                                                   <option selected="selected" disabled="disabled">Comfort</option>
+                                                  <option value='eco'>Economy</option>
+                                                  <option value='standard'>Standard</option>
+                                                  <option value='lux'>Lux</option>
                                                 </select>               
                                             </div>
                                         </div>
                                         <div class="form-group col-lg-3 col-md-3 col-sm-3 icon_arrow">
                                             <div class="input-group border-bottom-dark-2">
                                                 <select class="form-control" name="passenger" id="adult">
-                                                  <option selected="selected" disabled="disabled">passenger</option>
-                                                  <option value='1'>1 passenger</option>
-                                                  <option value='2'>2 passenger</option>
-                                                  <option value='3'>3 passenger</option>
-												      <option value='4'>4 passenger</option>
-													      <option value='5'>5 passenger</option>
+                                                  <option selected="selected" disabled="disabled">Passenger</option>
+                                                  <option value='3'>3 or less passenger</option>
+												      <option value='4'>4 or less passenger</option>
+														  <option value='6'>6 or less passenger</option>
                                                 </select>               
                                             </div>
                                         </div>
@@ -130,16 +141,6 @@ include("connection/connect.php");
 				
 				
 				
-				<div class="container_12">
-					<div class="grid_12">
-						<h1>
-							<a href="index.html">
-								<img src="images/logo.png" alt="Your Happy Family">
-							</a>
-						</h1>
-					</div>
-				</div>
-				<div class="clear"></div>
 			</header>
 <!--==============================Content=================================-->
 			<div class="content">
@@ -192,7 +193,7 @@ include("connection/connect.php");
 				echo 			'	</div>';
 				echo 		         $ctext ;
 				echo 			'	<br>';				
-				echo 		 "<a href=booking.php?book=".$id." class='btn'>book now</a>";
+				echo 		 "<a href=booking.php?book=".$id." class='btn'>Book Now</a>";
 				echo 		'	</div>';
 			echo 			'</div>';
 			echo 		'</div>';
@@ -235,7 +236,7 @@ include("connection/connect.php");
 				echo 			'	</div>';
 				echo 		         $ctext ;
 				echo 			'	<br>';				
-				echo 		 "<a href=booking.php?book=".$id." class='btn'>book now</a>";
+				echo 		 "<a href=booking.php?book=".$id." class='btn'>Book Now</a>";
 				echo 		'	</div>';
 			echo 			'</div>';
 			echo 		'</div>';

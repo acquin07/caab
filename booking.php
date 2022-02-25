@@ -65,11 +65,7 @@ $row=mysqli_fetch_array($result);
 						$ctext =  $row['ctext'];
 						
 		
-						$air_c =  $row['air_c'];
-						$fuel =  $row['fuel'];
-						$gps =  $row['gps'];
-						$safety =  $row['safety'];
-						$km =  $row['km'];
+						$km =  $row['pricekm'];
 						
 ?>
 
@@ -114,8 +110,8 @@ $row=mysqli_fetch_array($result);
 				<div class="container_12">
 					<div class="grid_12">
 						<h1>
-							<a href="index.html">
-								<img src="images/logo.png" alt="Your Happy Family">
+							<!-- <a href="index.html"> -->
+							<img src="images/logo.png" alt="Your Happy Family" width = "30%", height = "30%">
 							</a>
 						</h1>
 					</div>
@@ -153,11 +149,7 @@ $row=mysqli_fetch_array($result);
 						echo				'<dl>';
 								
 							echo			'<dd><span  style="font-size:20px;">Passenger Seats</span><span style="color:;font-size:18px;margin-left:10px;"> :'.$seat.'</span></dd>';
-							echo				'<dd><span  style="font-size:20px;">Air Conditioner</span><span style="color:;font-size:18px;margin-left:20px;"> :'.$air_c.'</span></dd>';
-							echo				'<dd><span  style="font-size:20px;">Fuel Type </span><span style="color:;font-size:18px;margin-left:72px;">:'.$fuel.'</span> </dd>';
-							echo				'<dd><span  style="font-size:20px;">GPS</span><span style="color:;font-size:18px;margin-left:123px;">  :'.$gps.'</span></dd>';
-							echo				'<dd><span  style="font-size:20px;">safety</span> <span style="color:;font-size:18px;margin-left:101px;"> :'.$safety.'</span></dd>';
-							echo				'<dd><span  style="font-size:20px;">Km/Rs</span><span style="color:;font-size:18px;margin-left:100px;"> :'.$km.'</span></dd>';
+							echo				'<dd><span  style="font-size:20px;">Price/km</span><span style="color:;font-size:18px;margin-left:100px;"> :'.$km.'</span></dd>';
 							echo			'</dl>';
 						echo			'</address>';
 					echo		'	</div>';
@@ -176,9 +168,12 @@ $row=mysqli_fetch_array($result);
 							<label class="name" >
 								<select  name='pick'  	 style='height:30px;width:170px;border:1px solid #fff;' >
 								<option selected="selected" disabled="disabled">Pickup location</option>
-                                                  <option value='JALANDHAR'>jalandhar</option>
-                                                  <option value='MOGA'>moga</option>
-                                                  <option value='FARIDKOT'>faridkot</option>
+								<option value='KALOOR'>Kaloor</option>
+                                                  <option value='PANAMBALLI'>Panamballi</option>
+                                                  <option value='KAKKANAD'>Kakkanad</option>
+												  <option value='FORTKOCHI'>FortKochi</option>
+												  <option value='ALUVA'>Aluva</option>
+												  <option value='MATTANCHERRY'>Mattancherry</option>
 												      
                                    </select>           
 							
@@ -188,9 +183,12 @@ $row=mysqli_fetch_array($result);
 							<label class="name" >
 								<select    name='drop'	  style='height:30px;width:170px;border:1px solid #fff;' >
 								<option selected="selected" disabled="disabled">Dropoff location</option>
-                                                  <option value='JALANDHAR'>jalandhar</option>
-                                                  <option value='MOGA'>moga</option>
-                                                  <option value='FARIDKOT'>faridkot</option>
+								<option value='KALOOR'>Kaloor</option>
+                                                  <option value='PANAMBALLI'>Panamballi</option>
+                                                  <option value='KAKKANAD'>Kakkanad</option>
+												  <option value='FORTKOCHI'>FortKochi</option>
+												  <option value='ALUVA'>Aluva</option>
+												  <option value='MATTANCHERRY'>Mattancherry</option>
 												      
                                    </select>           
 							
@@ -298,7 +296,6 @@ $row=mysqli_fetch_array($result);
 															    <option value='29 '>29</option>
 																<option value='30 '>30</option>
 																<option value='31 '>31</option>
-																<option value='32 '>32</option>
                                                   
 												      
                                    </select>   
@@ -369,10 +366,10 @@ $row=mysqli_fetch_array($result);
 			</div>
 		</div>
 <!--==============================footer=================================-->
-		<footer>
+<footer>
 			<div class="container_12">
 				<div class="grid_12">
-					<div class="f_phone"><span>Call Us:</span> + 1800 559 6580</div>
+					<div class="f_phone"><span>Call Us:</span> +91 9999999999</div>
 					<div class="socials">
 						<a href="#" class="fa fa-twitter"></a>
 						<a href="#" class="fa fa-facebook"></a>
@@ -380,8 +377,8 @@ $row=mysqli_fetch_array($result);
 					</div>
 					<div class="copy">
 						<div class="st1">
-						<div class="brand">Tour<span class="color1">T</span>axi </div>
-						&copy; 2017	| <a href="#">Privacy Policy</a> </div> Website designed by <a href="#" rel="nofollow">Navbro</a>
+						<div class="brand">ZAC<span class="color1"> C</span>ab </div>
+						&copy; 2022	| <a href="#">Privacy Policy</a>
 					</div>
 				</div>
 				<div class="clear"></div>

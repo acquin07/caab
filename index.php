@@ -7,18 +7,16 @@ if(isset($_POST['submit']))                  //if post btn is pressed
 
 
     
-	$name = $_POST['Name'];      
-	$email = $_POST['Email'];      
-	$Dfrom = $_POST['From'];      
-	$Dto = $_POST['To'];      
-	$date = $_POST['Date'];      
-	$time = $_POST['Time'];      
-	$Adult = $_POST['Adults'];      
-	$child = $_POST['Children'];      
-	$text = $_POST['Message'];  
-   	$pack = $_POST['Comfort'];    	
+	@$name = $_POST['Name'];      
+	@$email = $_POST['Email'];      
+	@$Dfrom = $_POST['From'];      
+	@$Dto = $_POST['To'];      
+	@$date = $_POST['Date'];      
+	@$time = $_POST['Time'];      
+	@$Adult = $_POST['Adults'];             
+   	@$pack = $_POST['Comfort'];    	
 	
-	if(!$name==' '||$email==' '||$Dfrom==' '||$Dto==' '||$date==' '||$time==' '||$Adult==' '||$child==' '||$text==' '||$pack=='')
+	if(!$name==' '||$email==' '||$Dfrom==' '||$Dto==' '||$date==' '||$time==' '||$Adult==' '||$pack=='')
 	{
 	
 	               echo '<div class="alert alert-dismissable fade in">';
@@ -31,12 +29,12 @@ if(isset($_POST['submit']))                  //if post btn is pressed
 	{
 	  
 					
-	$sql = "INSERT INTO user_info(name,email,Dfrom,Dto,date,time,adult,child,text,pack) VALUES ('$name', '$email','$Dfrom','$Dto','$date','$time','$Adult','$child','$text','$pack')";
+	echo$sql = "INSERT INTO user_info(name,email,Dfrom,Dto,date,time,adult,pack) VALUES ('$name', '$email','$Dfrom','$Dto','$date','$time','$Adult','$pack')";
 	mysqli_query($db, $sql);
 		header("refresh:1;url=result.php");
 	
-  echo '<div class="alert alert-success alert-dismissable fade in">';
- echo	'<a href="#" data-dismiss="alert" ></a>';
+//   echo '<div class="alert alert-success alert-dismissable fade in">';
+//  echo	'<a href="#" data-dismiss="alert" ></a>';
  echo 'Your Booking submit Successfully. Details are send to your Registered E-mail Address.';
 echo  	'</div>';
 	}
@@ -131,8 +129,8 @@ echo  	'</div>';
 				<div class="container_12">
 					<div class="grid_12">
 						<h1>
-							<a href="index.html">
-								<img src="images/logo.png" alt="Your Happy Family">
+							<!-- <a href="index.html"> -->
+								<img src="images/logo.png" alt="Your Happy Family" width = "40%", height = "40%">
 							</a>
 						</h1>
 					</div>
@@ -273,7 +271,7 @@ We see the happiness of assisting you best.
 		</br>
 							</div>
 						
-							<input class="btn btn-primary" type="submit" value="Submit">
+							<input class="btn btn-primary" type="submit" value="Submit" name="submit">
 						</form>
 						
 						

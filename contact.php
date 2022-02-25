@@ -72,7 +72,7 @@ echo  	'</div>';
 								<ul class="sf-menu">
 									<li><a href="index.php">Home</a></li>
 									
-									<li><a href="index-2.html">Cars</a></li>
+									<li><a href="car.php">Cars</a></li>
 									<li><a href="result.php">Search</a></li>
 									<li class="current"><a href="contact.php">Contacts</a></li>
 								</ul>
@@ -85,8 +85,8 @@ echo  	'</div>';
 				<div class="container_12">
 					<div class="grid_12">
 						<h1>
-							<a href="index.html">
-								<img src="images/logo.png" alt="Your Happy Family">
+							<!-- <a href="index.html"> -->
+							<img src="images/logo.png" alt="Your Happy Family" width = "30%", height = "30%">
 							</a>
 						</h1>
 					</div>

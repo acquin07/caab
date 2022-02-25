@@ -49,8 +49,8 @@
 				<div class="container_12">
 					<div class="grid_12">
 						<h1>
-							<a href="index.html">
-								<img src="images/logo.png" alt="Your Happy Family">
+							<!-- <a href="index.html"> -->
+							<img src="images/logo.png" alt="Your Happy Family" width = "30%", height = "30%">
 							</a>
 						</h1>
 					</div>
